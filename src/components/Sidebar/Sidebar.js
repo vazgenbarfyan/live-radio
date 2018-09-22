@@ -30,12 +30,12 @@ const Sidebar = () => (
             <LinksGroup
                 header="Կինո"
                 headerLink="/app/reviews"
-                glyph="tables"
+                glyph="cinema"
             />
             <LinksGroup
                 header="Ռադիո - գիրք"
                 headerLink="/app/radiobooks"
-                glyph="notifications"
+                glyph="radio"
             />
             <LinksGroup
                 header="Ինֆորմացիա"

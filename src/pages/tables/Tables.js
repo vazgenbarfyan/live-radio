@@ -19,35 +19,19 @@ import {
     BreadcrumbItem
 } from 'reactstrap';
 import {Sparklines, SparklinesBars} from 'react-sparklines';
-import kino from "./kino.png";
+
 import haykImg from "./photos/hayk.jpg";
 import levonImg from "./photos/levon.jpg";
 import jannaImg from "./photos/janna.jpg";
 import edgarImg from "./photos/edgar.jpg";
-import mherImg from "./photos/mher.jpg";
-import tigranImg from "./photos/tigran.jpg";
+
 
 import haykAudio from "./audios/hayk.mp3";
 import jannaAudio from "./audios/zhanna.mp3";
-import mherAudio from "./audios/mher.mp3";
-import tigranAudio from "./audios/tigran.mp3";
 import edgarAudio from"./audios/edgar.mp3";
 import edgarEvHaykAudio from "./audios/edgarEvhayk.mp3";
 import levonEvTigranAudio from "./audios/levonEvtigran.mp3";
 import ledibrdAudio from "./audios/ledibrd.mp3"
-import martinAudio from "./audios/martin.mp3";
-import ampopumAudio from "./audios/ampopum.mp3";
-
-import haykVideo from "./videos/hayk.mp4";
-import edgarVideo from "./videos/edgar.mp4";
-import edgarEvHaykVideo from "./videos/haykEVedgar.mp4"
-import mherVideo from "./videos/mher.mp4";
-import tigranVideo from "./videos/tigran.mp4";
-import tigranEvLevonVideo from "./videos/tigranEvLevon.mp4";
-import jannaVideo from "./videos/zhanna.mp4"
-import ledibrdVideo from "./videos/ledibrd.mp4"
-import martinVideo from "./videos/martin.mp4";
-import ampopumVideo from "./videos/ampopum.mp4";
 
 import Widget from '../../components/Widget';
 import s from './Static.scss';
@@ -435,7 +419,8 @@ class Tables extends Component {
             </div>
 
 
-            {guestList[that.state.selectedGuest] ? guestList[that.state.selectedGuest].data.map((data, index) => <Widget close collapse key={index}>
+            {guestList[that.state.selectedGuest] ? guestList[that.state.selectedGuest].data.map((data, index) =>
+                <Widget close collapse key={index}>
 
                     <audio controls src={data.audioPath} style={{display : 'block', float : "right"}}/>
 
@@ -447,10 +432,10 @@ class Tables extends Component {
                     }}>{data.name}</span>
 
                     {data.description.split('\n').map((item, key) => <div style={{
-                            textAlign : "left",
-                            fontSize  : '16px'
-                        }} key={key}>{item === "Վան Գոգի կրքերը" || item === "Կոկոյի գաղտնիքը" ?
-                            <h3>{item}</h3> : item}</div>)}
+                        textAlign : "left",
+                        fontSize  : '16px'
+                    }} key={key}>{item === "Վան Գոգի կրքերը" || item === "Կոկոյի գաղտնիքը" ?
+                        <h3>{item}</h3> : item}</div>)}
                 </Widget>) : null}
 
         </div>;
