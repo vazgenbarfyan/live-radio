@@ -20,12 +20,12 @@ const data = [
 ];
 
 const data2 = [
-    {name : 'Action', man : 400, woman : 150},
-    {name : 'Comedy', man : 210, woman : 150},
-    {name : 'Thriller', man : 197, woman : 55},
-    {name : 'Science', man : 120, woman : 123},
-    {name : 'Western', man : 140, woman : 120},
-    {name : 'Romantic', man : 15, woman : 60}
+    {name : 'Van', man : 400, woman : 150},
+    {name : 'Pulse', man : 210, woman : 150},
+    {name : 'Aurora', man : 197, woman : 55},
+    {name : 'Lebanon', man : 120, woman : 123},
+    {name : 'ArmNet', man : 140, woman : 120},
+    {name : 'Public', man : 15, woman : 160}
 
 ];
 
@@ -41,7 +41,7 @@ export default class Charts extends PureComponent {
                     <Col xs={12} md={6}>
                         <Widget
                             title={
-                                <span className="fw-semi-bold">The most popular films by genre in age between 18 and 40 </span>}>
+                                <span className="fw-semi-bold">The most popular radio channel in age between 18 and 40 </span>}>
                             <LineChart data={data2}/>
                         </Widget>
                     </Col>
