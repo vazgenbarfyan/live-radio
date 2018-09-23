@@ -4,10 +4,9 @@
 
 Application built for sharing information about film and audio industry. This app also includes radio books, reviews from critics, analytics of reviews. Below you can find technical characteristics of the application.
 
-## Features
+## Used technologies
 
 * React
-* Mobile friendly layout (responsive)
 * React Router
 * Bootstrap3
 * GraphQL
